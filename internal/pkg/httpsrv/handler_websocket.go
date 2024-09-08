@@ -25,9 +25,7 @@ func (s *Server) handlerWebSocket(w http.ResponseWriter, r *http.Request) {
 
 	// Start WS.
 	var upgrader = websocket.Upgrader{
-		CheckOrigin: func(r *http.Request) bool {
-			return true
-		},
+		CheckOrigin: nil,
 	}
 
 	c, err := upgrader.Upgrade(w, r, nil)
