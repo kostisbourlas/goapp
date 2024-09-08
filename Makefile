@@ -15,3 +15,9 @@ clean:
 
 run:	goapp
 	bin/server
+
+test:
+	go test ./... -v
+
+bench:
+	go test ./... -bench=.
