@@ -12,3 +12,6 @@ goapp:
 clean:
 	go clean
 	rm -f bin/*
+
+run:	goapp
+	bin/server
