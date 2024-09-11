@@ -21,3 +21,7 @@ test:
 
 bench:
 	go test ./... -bench=.
+
+build-cli:
+	mkdir -p bin
+	go build -o bin/cli ./cmd/cli/
